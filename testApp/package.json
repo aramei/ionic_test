@@ -6,8 +6,14 @@
   "scripts": {
     "clean": "ionic-app-scripts clean",
     "build": "ionic-app-scripts build",
+    "watch": "ionic-app-scripts watch",
     "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ionic:serve": "ionic-app-scripts serve",
+    "serve:before": "watch",
+    "emulate:before": "build",
+    "deploy:before": "build",
+    "build:before": "build",
+    "run:before": "build"
   },
   "dependencies": {
     "@angular/common": "2.4.8",
